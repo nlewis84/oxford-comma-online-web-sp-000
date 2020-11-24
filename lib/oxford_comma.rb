@@ -4,12 +4,8 @@ def oxford_comma(array)
   if array.count == (1..2)
    array.last.unshift(" and ")
    array.join
-  elsif array.count = 3
+  elsif array.count >= 3
    array.last.unshift("and ")
-   
-   unshift
+   array.join(", ")
   end
-  
-  array.join(" and ")
-  binding.pry
 end
